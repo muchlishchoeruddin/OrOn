@@ -1,0 +1,217 @@
+		body{
+			position: relative;
+			background-color:#DDD;
+		}
+/* BERANDA */
+/* BERANDA */
+/* BERANDA */
+		.Bsec{
+			background-size: cover;
+			box-shadow: 0px 5px 10px grey;
+			width: 100%;
+			height:100vh;
+			position: relative;
+			z-index: 1;
+		}
+		.Bsec::before{
+			content:'';
+			position: absolute;
+			width:100%;
+			height:100vh;
+			left:0;
+			top:0;
+			background: rgba(0,0,2,0.5);
+		}
+		.container{
+			margin-top:100px;
+		}
+		.t-oron{
+			height:70%;
+			background-position: 400px;
+			background-size: cover;
+			box-shadow: 0px 5px 10px #005;
+			border-radius: 10px;
+			position: absolute;
+			margin: auto;
+			left: 0;
+			right:0;
+			top:0;
+			bottom:0;
+		}
+		.operator-h{
+			width:400px;
+			height:102%;
+			background-color: #eee;
+			border-radius:5px 0px 0px 5px;
+			box-shadow: 1px 0px 20px black;
+			color:lightblue;
+		}
+		.operator-i-h{
+			position: absolute;
+			width:120px;
+			height:70%;
+			margin-left:33%;
+			margin-top:6%;
+			background-color:#ddd;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px 0px #222, 0px 0px 10px 2px #88f;
+		}
+		.anim{
+			position: absolute;
+		}
+		.item-1{
+			transform: scale(0);
+			margin-left:580px;
+			margin-top:150px;
+			font-size: 50px;
+			text-align: center;
+			font-family: fantasy;
+			transition: transform 0.5s;
+		}
+		.item-2{
+			transform: scale(0);
+			margin-left:520px;
+			margin-top:150px;
+			font-size: 50px;
+			text-align: center;
+			font-family: fantasy; 
+			transition: transform 0.5s;
+		}
+		.item-3{
+			transform: scale(0);
+			margin-left:600px;
+			margin-top:150px;
+			font-size: 50px;
+			text-align: center;
+			font-family: fantasy; 
+			transition: transform 0.5s;
+		}
+		.item-active{
+			transform: scale(1);
+		}
+		.active{
+			display:block;
+		}
+		.img-1{
+			width:50px;
+			cursor:pointer;
+		}
+		.img-2{
+			width:50px;
+			cursor:pointer;
+		}
+		.img-3{
+			width:50px;
+			cursor:pointer;
+		}
+		.point{
+			box-shadow: inset 0px 0px 10px grey,0px 0px 10px grey;
+			animation: point 3s ease-in;
+		}
+		@keyframes point{
+			0%{
+				width:50px;
+			}
+			10%{
+				width:55px;
+			}
+			90%{
+				width:55px;
+			}
+			100%{
+				width:50px;
+			}
+		}
+		#cicle-down{
+			position: absolute;
+			background-color:#3d7eaa;
+			width:60px;
+			height:60px;
+			right:20px;
+			bottom:20px;
+			color:white;
+			border-radius:100%;
+			cursor:pointer;
+			box-shadow: inset -10px -10px rgba(0,0,0,0.5); 
+		}
+		.bodyc{
+			background-color:#fff;
+			margin-top:20px;
+			width:100%;
+			height:120vh;
+		}
+		.header-c{
+			background-color:#aaa;
+			width:100%;
+			height:75px;
+		}
+
+/* BERANDA */
+/* BERANDA */
+/* Login */
+
+.Lsec{
+	width:100%;
+	height:100vh;
+}
+.Lbox{
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right:0;
+	top:0;
+	bottom:0;
+	width:750px;
+	height:500px;
+	background-color: #3d7eaa;
+	animation: lbox 2s ease-in-out;
+}
+@keyframes lbox{
+	0%{width:10px;height:10px;}
+	50%{width:750px;height:10px;}
+	100%{width:750px;height:500px;}
+}
+.Llogin{
+	margin-top:100px;
+	transform: scale(1);
+	opacity: 1;
+	color:#fff;
+	text-align: center;
+	animation: llogin 2.5s ease-in-out;
+}
+@keyframes llogin{
+	0%{opacity:0;margin-top: 0px;transform: scale(0);}
+	57.5%{opacity:0;transform: scale(1);}
+	60%{margin-top:100px;}
+	100%{opacity:1;}
+}
+.textin{
+	width:450px;
+	height:40px;
+	margin:10px;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding-left:10px;
+	color:#3d7eaa;
+	border:0px solid white;
+	border-radius:5px;
+	box-shadow:0px 0px 0px rgba(0,0,0,0.5);
+	transform: translateY(0px) translateX(0px);
+	transition: all 1s;
+	outline: none;
+}
+.textin:focus{
+	transform:translateY(-10px) translateX(-10px);
+	box-shadow:10px 10px 10px rgba(0,0,0,0.5);
+	border:2px solid #ffe47a;
+}
+/*ADMIN || ADMIN || ADMIN ||*/
+/*|| || || || || || || || ||*/
+/*\/ \/ \/ \/ \/ \/ \/ \/ \/*/
+
+.Abody{
+	margin-left:255px;
+}
+.Adashboard,.Adanggota1,.Adanggota2,.Adanggota3,.Adokumentasi,.Atanggota,.Aeanggota{
+	display: none;
+}
